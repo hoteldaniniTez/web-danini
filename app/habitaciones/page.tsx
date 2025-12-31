@@ -3,6 +3,11 @@ import { RoomCardClient } from '@/components';
 import { ROOMS_DATA } from '@/interfaces';
 import { CalendarCheck, ShieldCheck } from 'lucide-react';
 
+export const metadata = {
+  title: 'Habitaciones - Hotel Danini Teziutlán',
+  description: 'Descansa, recupera tu energía y encuentra el balance perfecto entre comodidad boutique y funcionalidad moderna.',
+};
+
 export default function HabitacionesPage() {
   // Paleta de colores definida por variables Tailwind (mentalmente)
   // bg-stone-50 para el fondo general (evita el blanco clínico)

@@ -3,9 +3,12 @@ import { PetFriendlyClient } from '@/components';
 import { PawPrint } from 'lucide-react';
 import Image from "next/image";
 
+export const metadata = {
+  title: 'Pet Friendly - Hotel Danini Teziutlán',
+  description: 'Sabemos que la familia no está completa sin ellos. Disfruta de una estancia inolvidable junto a tu fiel compañero.',
+};
+
 export default function PetPage() {
-  const accentColor = '#d79623'; // Dorado
-  const darkGreen = '#003629';   // Verde corporativo
 
   return (
     <section className="relative w-full overflow-hidden bg-stone-50 py-16 md:py-24" id="pet-friendly-policy">

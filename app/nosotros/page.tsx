@@ -1,6 +1,12 @@
 import { NosotrosClient } from '@/components';
 import Image from 'next/image';
 
+export const metadata = {
+  title: 'Nosotros - Hotel Danini Teziutlán',
+  description: 'Nuestra esencia.',
+};
+
+
 export default function NosotrosPage() {
   return (
     // CORRECCIÓN AQUI:

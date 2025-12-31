@@ -1,5 +1,9 @@
 import { FormContacto, MapaInteractivo } from "@/components";
 
+export const metadata = {
+    title: 'Contacto - Hotel Danini Teziutlán',
+    description: 'Encuentra la información de contacto de Hotel Danini Teziutlán para resolver tus dudas y consultas.',
+};
 
 export default function ContactosPage() {
     return (

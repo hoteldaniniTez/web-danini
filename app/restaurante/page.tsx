@@ -2,6 +2,11 @@
 import { RestauranteClient } from '@/components';
 import { CategoriaMenu, EspacioRestaurante } from '@/interfaces/restaurante';
 
+export const metadata = {
+  title: 'Restaurante - Hotel Danini Teziutlán',
+  description: 'Sabores que enamoran en el corazón de Teziutlán. Cocina nacional e internacional, café de especialidad y servicio de primera. Abierto a huéspedes y público general.',
+};
+
 
 const menuData: CategoriaMenu[] = [
   {

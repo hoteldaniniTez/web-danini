@@ -4,6 +4,12 @@ import { Paquete } from '@/interfaces';
 import { Sparkles } from 'lucide-react';
 import Image from 'next/image';
 
+export const metadata = {
+  title: 'Experiencias - Hotel Danini Teziutlán',
+  description: 'Porque los pequeños detalles son los que construyen los grandes recuerdos.',
+};
+
+
 // Datos definidos en el servidor (SEO Friendly)
 const packagesData: Paquete[] = [
   {

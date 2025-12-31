@@ -2,6 +2,12 @@ import { EventosClient } from "@/components";
 import { EspacioEvento } from "@/interfaces";
 import Image from "next/image";
 
+export const metadata = {
+  title: 'Eventos - Hotel Danini Teziutlán',
+  description: 'Celebra momentos inolvidables en Hotel Danini. Organizamos bodas, conferencias y eventos sociales en Teziutlán con salones exclusivos y servicio integral.',
+};
+
+
 const espaciosData: EspacioEvento[] = [
   {
     nombre: "Jardín de la Fuente",
