@@ -66,7 +66,7 @@ export const PetFriendlyClient: React.FC = () => {
                 <div>
                     <div className="flex items-center gap-2 mb-1 text-white/80 text-sm font-medium uppercase tracking-wide">
                         <DollarSign size={16} />
-                        Costo Adicional
+                        Costo Adicional Por Noche
                     </div>
                     <p className="text-3xl font-serif">
                         $300 <span className="text-lg font-sans font-light">MXN</span>
