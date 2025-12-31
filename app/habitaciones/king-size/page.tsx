@@ -21,6 +21,11 @@ import {
   Bath
 } from 'lucide-react';
 
+export const metadata = {
+  title: 'Habitacion King Size - Hotel Danini Teziutlán',
+  description: 'Experimenta la máxima expresión del confort en nuestra espaciosa habitación con cama King Size.',
+};
+
 // --- Datos Estáticos de la Habitación (Definidos en el Server) ---
 const habitacionData: HabitacionProps = {
   nombre: "King Size",

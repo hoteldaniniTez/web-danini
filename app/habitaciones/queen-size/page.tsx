@@ -6,6 +6,12 @@ import {
   ShowerHead, DoorOpen, ShieldAlert, Bath
 } from 'lucide-react';
 
+export const metadata = {
+  title: 'Habitacion Queen Size - Hotel Danini Teziutlán',
+  description: 'Descubre el equilibrio perfecto entre intimidad y sofisticación.',
+};
+
+
 // --- Datos Estáticos (Mismos datos, solo presentación) ---
 const habitacionData: HabitacionProps = {
   nombre: "Queen Size",

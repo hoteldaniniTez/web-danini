@@ -23,6 +23,11 @@ import {
   Bath
 } from 'lucide-react';
 
+export const metadata = {
+  title: 'Habitacion Suite Deluxe - Hotel Danini Teziutlán',
+  description: 'Descubre el encanto de nuestra Suite Deluxe, un espacio perfectamente optimizado para brindar confort y calidez.',
+};
+
 // --- Datos Estáticos de la Habitación (Definidos en el Server) ---
 const habitacionData: HabitacionProps = {
   nombre: "Suite Deluxe",

@@ -21,6 +21,11 @@ import {
   Bath
 } from 'lucide-react';
 
+export const metadata = {
+  title: 'Habitacion Doble Matrimonial - Hotel Danini Teziutlán',
+  description: 'Diseñada para quienes viajan acompañados pero valoran su espacio personal.',
+};
+
 // --- Datos Estáticos de la Habitación (Definidos en el Server) ---
 const habitacionData: HabitacionProps = {
   nombre: "Doble Matrimonial",

@@ -25,6 +25,11 @@ import {
   Bath
 } from 'lucide-react';
 
+export const metadata = {
+  title: 'Habitacion Master Suite - Hotel Danini Teziutlán',
+  description: 'Eleva tu estancia a un nivel superior en la habitación más exclusiva de nuestro hotel.',
+};
+
 // --- Datos Estáticos de la Habitación (Definidos en el Server) ---
 const habitacionData: HabitacionProps = {
   nombre: "Master Suite",
