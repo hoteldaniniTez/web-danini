@@ -1,15 +1,31 @@
+/* app/globals.css */
+
 @import "tailwindcss";
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  /* OPCIONAL: Si quieres que Tailwind CSS use tus fuentes 
+    como la sans (predeterminada) y mono, anula aquí las variables.
+    Next.js inyectará automáticamente --font-open-sans y --font-roboto
+    si las pasaste en el layout.tsx.
+  */
+  --font-sans: var(--font-open-sans); /* Usar tu fuente principal */
+  --font-mono: var(--font-roboto);    /* Usar tu fuente secundaria para mono, si aplica */
+
+  
+  --swiper-theme-color: rgba(240, 240, 240, 0.8) !important;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  /* Mantén esto si usas Geist, pero si quieres usar tus fuentes 
+    como las predeterminadas de todo, se define en :root.
+    Si no usas Geist, puedes borrar estas dos líneas. 
+  */
+  --font-sans: var(--font-open-sans); 
+  --font-mono: var(--font-roboto);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -22,5 +38,59 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  /* ACTUALIZACIÓN CLAVE: Aquí establecemos la fuente principal para todo el cuerpo.
+    Si definiste tu fuente principal en config/fonts.ts como '--font-open-sans', úsala aquí. 
+  */
+  font-family: var(--font-open-sans), sans-serif;
+}
+
+/* PASO ADICIONAL (Opcional): Aplica la fuente secundaria (si es para títulos) 
+  a los encabezados, siguiendo el estilo de la web de Fiesta Inn.
+*/
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-roboto), var(--font-open-sans), sans-serif;
+}
+
+.texto-dorado {
+  /* Usaremos un degradado que va de un dorado claro a uno más oscuro para el brillo */
+  background: linear-gradient(to right, #efb810, #F0B917);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text; /* Estándar para otros navegadores */
+  text-fill-color: transparent; /* Estándar para otros navegadores */
+}
+
+/* Y una clase para la línea animada (usaremos el color más oscuro del degradado) */
+.linea-dorada {
+  background-color: #F0B917; /* Un tono sólido para la línea inferior */
+}
+
+
+/* Certificaciones */
+/* Asegura que los slides se centren verticalmente en el wrapper */
+.cert-swiper .swiper-wrapper {
+  align-items: center; /* centra verticalmente los slides */
+}
+
+/* Paginación: siempre cerca de las slides (ajusta bottom si necesitas) */
+.cert-swiper .swiper-pagination {
+  position: absolute;
+  bottom: 6px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+/* Asegura que cada slide no cree altura extra */
+.cert-swiper .swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto; /* evita alturas forzadas extra */
+}
+
+/* Opcional: evita overflow y recortes raros */
+.cert-container { 
+  /* define la altura que quieres que ocupe el área del slider (opcional) */
+  /* height: 170px;  <-- si quieres una altura fija */
 }
