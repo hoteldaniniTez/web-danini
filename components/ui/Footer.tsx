@@ -118,10 +118,10 @@ export const Footer: React.FC = () => {
                             <p className="text-xs text-stone-400 mb-3">Sabores locales con toque gourmet.</p>
 
                             <div className="flex gap-3">
-                                <a href="#" target="_blank" className="p-2 bg-stone-700 rounded-full hover:bg-[#F0B917] hover:text-white text-stone-300 transition-all">
+                                <a href="https://www.facebook.com/share/14QjbiMRRZd/" target="_blank" className="p-2 bg-stone-700 rounded-full hover:bg-[#F0B917] hover:text-white text-stone-300 transition-all">
                                     <Facebook size={16} />
                                 </a>
-                                <a href="#" target="_blank" className="p-2 bg-stone-700 rounded-full hover:bg-[#F0B917] hover:text-white text-stone-300 transition-all">
+                                <a href="https://www.instagram.com/restaurantedanini_teziutlan/" target="_blank" className="p-2 bg-stone-700 rounded-full hover:bg-[#F0B917] hover:text-white text-stone-300 transition-all">
                                     <Instagram size={16} />
                                 </a>
                             </div>
